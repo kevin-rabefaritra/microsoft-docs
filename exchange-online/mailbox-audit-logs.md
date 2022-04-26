@@ -1,4 +1,4 @@
-# Mailbox audit log
+# Mailbox audit logs
 ## Introduction
 By default, auditing is already enabled for all new mailboxes. But not every action performed on the mailbox is audited.
 
