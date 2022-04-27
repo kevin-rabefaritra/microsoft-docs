@@ -7,6 +7,8 @@ That is, the delegate will not be able to delete / edit / move the items within 
 ## Procedure
 The PowerShell cmdlets `Add-MailboxPermission` and `Add-RecipientPermission` can only be used to grand FullAccess and SendAs / SendOnBehalf permissions.
 
+At the time I'm writing this guide, using `Add-MailboxPermission` with the `-AccessRights` parameter `ReadPermission` is not working yet.
+
 For read only access, we can only use the cmdlet `Add-MailboxFolderPermission` but this cmdlet is limited to an individual folder.
 
 Thus, to achieve it, we need a script to iterate through each folder inside the mailbox and grant *Reviewer* access.
@@ -30,8 +32,17 @@ ForEach($folder in $folders){
 }
 ```
 
-Note: while running this script, you will note that some folders cannot be shared. This is because those are system generated folders such as Purge, Holds, Versions, ...
+#### Important
+While running this script, you will note that some folders cannot be shared.
+
+> Add-MailboxFolderPermission: The operation couldn't be performed because 'kevin@contoso.com:\xxxxxxxxxx' couldn't be found.
+
+This is because those are system generated folders such as Purge, Holds, Versions, ...
 Those are safe to ignore.
+
+A particular point about the Calendar folder as well.
+
+> Add-MailboxFolderPermission: Your request can't be completed. You don't have permission to share this calendar.
 
 ### Remove read only permission
 Similarly, to remove the above granted permissions, you can run the same script but using `Remove-MailboxFolderPermission` instead of `Add-MailboxFolderPermission`.
@@ -53,5 +64,6 @@ ForEach($folder in $folders){
 
 ## More information
 [Add-MailboxFolderPermission (Exchange PowerShell) | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/exchange/add-recipientpermission?view=exchange-ps)
+
 [Remove-MailboxFolderPermission (Exchange PowerShell) | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/exchange/remove-recipientpermission?view=exchange-ps)
 

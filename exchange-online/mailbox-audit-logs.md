@@ -54,5 +54,7 @@ While running the `Search-MailboxAuditLogs`, you will come across multiple activ
 
 ## More information
 [Manage mailbox auditing - Microsoft Purview | Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)
+
 [Mailbox audit logging in Exchange Server | Microsoft Docs](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/mailbox-audit-logging/mailbox-audit-logging?view=exchserver-2019)
+
 [Search-MailboxAuditLog (Exchange PowerShell) | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/exchange/search-mailboxauditlog?view=exchange-ps)
