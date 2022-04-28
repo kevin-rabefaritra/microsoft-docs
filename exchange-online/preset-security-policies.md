@@ -1,4 +1,4 @@
-# [Draft] Preset security policies in EOP
+# Preset security policies in EOP
 ## Introduction
 Preset security policies are by default recommended for applying different levels of pre-defined policies in EOP.
 The main advantage is to avoid creating a custom policy for different layers of EOP:
@@ -123,7 +123,8 @@ Both preset security policies can be manually replicated from a custom policy. I
 
 This can be done from the PowerShell cmdlet `Set-HostedContentFilterPolicy` for instance.
 
-### 
+### Contribution
+Kudos to Diego Cruz from Ingram Micro for having raised the concern!
 
 ## More information
 [Preset security policies - Office 365 | Microsoft Docs](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide)
