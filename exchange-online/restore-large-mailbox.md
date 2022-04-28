@@ -1,16 +1,21 @@
-# Restore large mailbox
+# Restore large soft-deleted / inactive mailbox
 ## Introduction
 Restoring a soft-deleted / inactive mailbox can be done through the `New-MailboxRestoreRequest` PowerShell cmdlet. This typically works for the primary mailbox (steps [here](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#restoring-a-user-in-a-hybrid-deployment)).
 
 As for an archive mailbox with auto-expanding enabled, you may stumble into the following error message.
-> bla
+> Unable to perform Mailbox Restore as one of the mailboxes is a Large Archive. You can use eDiscovery to search and export data that has been preserved in inactive mailboxes.
 
 Unfortunately, even though this is mentioned in the [documentation](https://docs.microsoft.com/en-us/microsoft-365/compliance/restore-an-inactive-mailbox?view=o365-worldwide):
 > You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox and then import to another mailbox.
 
 The exact steps are not documented.
 
-You can restore a soft-deleted / inactive mailbox using Content search by selecting the mailbox with a leading "." (for example *.kevin@contoso.com*) but in this guide, we use PowerShell to create the content search job.
+You can restore a soft-deleted / inactive mailbox using Content search by selecting the mailbox with a leading "." (for example *.kevin@contoso.com*).
+
+![Inactive mailbox showing in content search](res/content-search-inactive.png "Inactive mailbox showing in content search")
+
+
+In this guide, we use PowerShell to create the content search job.
 
 ## Procedure
 To create a content search job on the soft-deleted / inactive archive. 
@@ -38,7 +43,7 @@ Get-ComplianceSearch -Identity "ContentSearch-InactiveMailbox"
 Finally, once the content search is ready, you can manually navigate to your Microsoft 365 Security & Compliance center to check the created content search and proceed with the results export.
 
 ### Contribution
-Kudos for Marcus Nguyen for having been with us through this and ultimately inspired us to write this guide.
+Kudos for Marcus Nguyen, Solutions Architect from ISOutsource, for having been with us through this and ultimately inspired us to write this guide.
 
 ## More information
 [Delete or restore user mailboxes in Exchange Online | Microsoft Docs](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#restoring-a-user-in-a-hybrid-deployment)

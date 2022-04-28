@@ -14,7 +14,7 @@ Thus I'll be sharing some useful scripts / guides on this repository.
 3. [[Script] Shared mailboxes report](exchange-online/shared-mailboxes-report.md)
 4. [[How To] Read only permission for shared mailboxes](exchange-online/read-only-shared-mailbox.md)
 4. [[Best practices] Mailbox audit logs](exchange-online/mailbox-audit-logs.md)
-5. [[How To] Restore a large mailbox](exchange-online/restore-large-mailbox.md)
+5. [[How To] Restore a large soft-deleted / inactive mailbox](exchange-online/restore-large-mailbox.md)
 6. [[Review] Preset security policies in EOP](exchange-online/preset-security-policies.md)
 
 ### Azure AD
