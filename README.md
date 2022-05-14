@@ -21,6 +21,9 @@ Thus I'll be sharing some useful scripts / guides on this repository.
 ### Azure AD
 1. [[How To] Last sign-in report](azure-ad/last-sign-in-report.md)
 
+### SharePoint Online
+1. [[How To] Last sign-in report](sharepoint-online/site-sensitivity-labels.md)
+
 #### Contributing
 Microsoft 365 online support does **not** provide scripting. If you have suggestions, you are welcome to contribute to this documentation or contact me directly.
 
