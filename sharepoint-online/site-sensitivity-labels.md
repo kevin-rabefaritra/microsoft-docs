@@ -1,4 +1,4 @@
-# Sensitivity labels for SharePoint sites / Microsoft Teams / Microsoft 365 groups sensitivity
+# Sensitivity labels for SharePoint sites / Microsoft Teams / Microsoft 365 groups
 ## Introduction
 By default, sensitivity labels are not available to be applied to entire SharePoint sites, Microsoft Teams, or Microsoft 365 groups.
 To enable the capability, a set of PowerShell cmdlets need to be executed.
