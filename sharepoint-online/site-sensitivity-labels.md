@@ -76,4 +76,4 @@ If the cmdlets performed above did not result in any error message. You should b
 
 [Assign sensitivity labels to Microsoft 365 groups in Azure Active Directory | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-assign-sensitivity-labels)
 
-[Azure Active Directory cmdlets for configuring group settings](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-settings-cmdlets)
+[Azure Active Directory cmdlets for configuring group settings | Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-settings-cmdlets)
