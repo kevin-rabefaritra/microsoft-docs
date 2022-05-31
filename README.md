@@ -24,6 +24,9 @@ Thus I'll be sharing some useful scripts / guides on this repository.
 ### SharePoint Online
 1. [[How To] Sensitivity labels for SharePoint sites / Microsoft Teams / Microsoft 365 groups](sharepoint-online/site-sensitivity-labels.md)
 
+### ~~Security & Compliance~~ Purview
+1. [[How To] Use the compliance search action to perform targetted email deletion](purview/compliance-search-action.md)
+
 #### Contributing
 Microsoft 365 online support does **not** provide scripting. If you have suggestions, you are welcome to contribute to this documentation or contact me directly.
 
