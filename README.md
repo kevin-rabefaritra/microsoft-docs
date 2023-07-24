@@ -30,7 +30,4 @@ Thus I'll be sharing some useful scripts / guides on this repository.
 #### Contributing
 Microsoft 365 online support does **not** provide scripting. If you have suggestions, you are welcome to contribute to this documentation or contact me directly.
 
-#### Contact
-kevinm.ra@hotmail.com
-
 ![Microsoft](microsoft-logo.png)
