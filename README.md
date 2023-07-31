@@ -1,12 +1,10 @@
+> **Discontinued**
+> This repository is discontinued since the owner ~~got a better paycheck~~ engaged in new projects.
+> Please refer to the official [Microsoft Exchange documentation](https://learn.microsoft.com/en-us/exchange/exchange-online) instead.
+
 # Microsoft Docs
-## ⚠️ Disclaimer
+## Disclaimer
 Those are **non-offical** Microsoft documentation. Microsoft shall **not** be responsible if any instruction provided by the below pages doesn't work as expected or impacts the behavior of your environment.
-
-## Introduction
-As engineers, we've come across multiple situations where writing undocumented PowerShell scripts were necessary. Everytime I provided a PowerShell script, I'd save a copy on my computer for future use.
-However, I understand the struggle of some organizations / engineers to find scripts on Microsoft external / internal documentation pages.
-
-Thus I'll be sharing some useful scripts / guides on this repository.
 
 ## Content
 ### Exchange Online
